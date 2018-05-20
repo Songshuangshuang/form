@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <br/>
+        <h1> HTML基础-注册表单 </h1>
+    <br/>
+    <hr>
+    <br/>
+    <center>
+        <form action="1index.jsp">
+            <table border="1px" style="width:300px;">
+                <tr>
+                    <td align="right">
+                        登录名称:
+                    </td>
+                    <td>
+                        <input type="text" name="name" style="width:100%;"  required="required">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        登录密码:
+                    </td>
+                    <td>
+                        <input type="password" name="password" style="width:100%;" required="required">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        密码确认:
+                    </td>
+                    <td>
+                        <input type="text" name="confirm" style="width:100%;" required="required">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        密码保护问题:
+                    </td>
+                    <td>
+                        <select name="question" style="width:100%;" required="required">
+                            <option value="0">你的宠物叫什么名字？</option>
+                            <option value="1">你的出生地是？</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        问题答案:
+                    </td>
+                    <td>
+                        <input type="text" name="answer" style="width:100%;" required="required">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        性别:
+                    </td>
+                    <td>
+                        <label><input name="sex" type="radio" value="" required="required" />男</label>
+                        <label><input name="sex" type="radio" value="" required="required" />女</label>
+                    </td>
+                </tr>
+                <tr >
+                    <td colspan="2">
+                        <center>
+                            <button class = "submit">注册</button>&nbsp;&nbsp;&nbsp;<button type = "reset">重填</button>
+                        </center>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+    <br/>
+    <hr>
+    <script src = "index.js" ></script>
+</body>
+</html>
